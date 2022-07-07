@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    height: 100vh;
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Poppins";
+
+}
+.card{
+   position: relative;
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+    background-color: #f1811ede;
+    border-radius: 15px;
+}
+.card{
+    padding: 12px 10px;
+    transition: 0.5s linear ;
+}
+.card_icont{
+   
+    color: #ffffff;
+    margin: 6px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.card_img{
+    height: 65%;
+    transition: 0.5s linear ;
+}
+.card_img img{
+    margin-top: -30px;
+    height: 100%;
+    margin-left: 15px;
+    object-fit: cover;
+}.card_text{
+    margin-top: -80px;
+}
+.card_title{
+    transition: 0.5s linear ;
+    font-weight: 600;
+    color: #11bec4;
+    font-size: 25px;
+    text-align: center;
+}
+.card_price{
+    cursor: pointer;
+    transition: 0.5s linear ;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.card_action{
+    cursor: pointer;
+    transition: 0.5s linear ;
+    margin-top: 100px;
+    opacity: 0;
+}
+.card_size-number{
+    background-color:rgb(245, 245, 245);
+    padding: 3px 6px;
+    margin: 0px 2px ;
+    border-radius: 2px;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+
+}
+.card_color{
+display: flex;
+
+}
+.card_color span{
+  width: 12px;
+  height: 12px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 0 4px ;
+    transition: 0.1s linear;
+}
+.card_pay{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.card:hover .card_img{
+    transform: translateY(-120px) rotate(-20deg);
+    transition: 0.5s linear ;
+  
+}
+.card:hover .card_title{
+    transform: translate(-40px,-50px) ;
+    transition: 0.5s linear ;
+}
+.card:hover .card_price{
+    transform: translate(-120px,-50px) ;
+    transition: 0.5s linear ;
+}
+.card:hover .card_action{
+    transform: translateY(-110px) ;
+    transition: 0.5s linear ;
+    opacity: 1;
+}
+.button{
+    transition: 0.15s linear;
+}
+.button:hover{
+    transform: scale(0.9);
+   
+}
+.card_color span:hover{
+    transform: scale(1.2);
+}
