@@ -123,3 +123,19 @@ display: flex;
 .card_color span:hover{
     transform: scale(1.2);
 }
+
+@media only screen and (max-width:46em){
+    .card{
+        width: 240px;
+    }
+    .card_img img {
+        margin-top: -30px;
+        height: 100%;
+        margin-left: 0;
+        object-fit: cover;
+       
+    }
+    .card_img {
+        height: 56%;
+    }
+}
