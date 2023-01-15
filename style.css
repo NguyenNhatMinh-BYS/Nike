@@ -138,4 +138,12 @@ display: flex;
     .card_img {
         height: 56%;
     }
+    .card:hover .card_title{
+        transform: translate(-16px,-50px) ;
+        transition: 0.5s linear ;
+    }
+    .card:hover .card_price{
+        transform: translate(-80px,-50px) ;
+        transition: 0.5s linear ;
+    }
 }
